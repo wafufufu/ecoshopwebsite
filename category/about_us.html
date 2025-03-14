@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ware Official Store - About Us</title>
+    <link rel="stylesheet" href="../assets/css/app.css" />
+    <link rel="stylesheet" href="../assets/css/about_us.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-wrapper">
+        <div class="header-brand">
+          <div class="header-brand-logo">
+            <a href="../index.html"
+              ><img
+                src="../assets/images/logo.png"
+                alt="Modern fonts"
+                class="logo"
+            /></a>
+          </div>
+          <div class="header-more">
+            <div class="header-more-search">
+              <button class="btn-search">
+                <i class="fas fa-search search-img"></i>
+              </button>
+              <input
+                type="text"
+                class="input-search"
+                placeholder="Type to Search..."
+              />
+            </div>
+            <ion-icon
+              id="more"
+              class="icon-img hidden"
+              name="ellipsis-vertical-outline"
+              onclick="showCategory()"
+            ></ion-icon>
+          </div>
+        </div>
+        <div class="header-brand-nav" id="nav">
+          <li class="header-brand-nav-item">
+            <a href="./men.html" class="header-brand-nav-link">WARE MEN</a>
+          </li>
+          <li class="header-brand-nav-item">
+            <a href="./woman.html" class="header-brand-nav-link">WARE WOMAN</a>
+          </li>
+          <li class="header-brand-nav-item">
+            <a href="./collection.html" class="header-brand-nav-link"
+              >COLLECTIONS</a
+            >
+          </li>
+          <li class="header-brand-nav-item">
+            <a href="./about_us.html" class="header-brand-nav-link">ABOUT US</a>
+          </li>
+          <li class="header-brand-nav-item">
+            <a href="./stores.html" class="header-brand-nav-link">STORES</a>
+          </li>
+          <li class="header-brand-nav-item">
+            <a href="./support.html" class="header-brand-nav-link">SUPPORT</a>
+          </li>
+        </div>
+      </div>
+    </header>
+    <div class="background">
+      <div class="background-info">
+        <div class="background-vid">
+          <video
+            class="video"
+            autoplay
+            muted
+            loop
+            src="../assets/vid/backgroud_1.mp4"
+            id="video"
+          ></video>
+        </div>
+        <div class="text">
+          <h1 id="typing-text"></h1>
+        </div>
+      </div>
+      <div class="background-subs">
+        <div class="background-subs-wrapper">
+          <div class="subs-thumb">
+            <img
+              src="https://images.unsplash.com/photo-1608228088998-57828365d486?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZmFzaGlvbiUyMHN0b3JlfGVufDB8MHwwfGJsYWNrX2FuZF93aGl0ZXw%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class="subs-thumb-img"
+            />
+          </div>
+          <div class="subs-form" id="form">
+            <h1 class="subs-name">
+              SUBSCRIBE TO RECEIVER MORE INFORMATION FROM US
+            </h1>
+            <div class="subs-input">
+              <input
+                id="name"
+                type="text"
+                class="input"
+                autocomplete="off"
+                placeholder="YOUR NAME"
+              />
+              <input
+                id="email"
+                type="email"
+                class="input"
+                autocomplete="off"
+                placeholder="YOUR EMAIL"
+              />
+              <button class="btn-accept" onclick="onClick()">SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="separate"></div>
+    <footer class="footer">
+      <div class="footer-item">
+        <div class="footer-logo">
+          <img class="footer-img" src="../assets/images/logo.png" alt="" />
+          <h2 class="footer-desc">
+            WARE - YOUR LIFE - YOUR STYLE - YOUR TIME - ALL FOR YOU
+          </h2>
+        </div>
+      </div>
+      <div class="footer-item">
+        <h1 class="footer-title">SHIPPING</h1>
+        <a href="" class="footer-link">SHIPPING VIETNAM(CHANGE)</a>
+        <a href="" class="footer-link">LANGUAGE ENGLISH(CHANGE)</a>
+      </div>
+      <div class="footer-item">
+        <h1 class="footer-title">CONTACT</h1>
+        <a href="tel:+842033185920" class="footer-link">+84 20 33 18 59 20</a>
+        <a href="mailto:ware@example.com" class="footer-link">EMAIL</a>
+      </div>
+      <div class="footer-item">
+        <h1 class="footer-title">ABOUT US</h1>
+        <a href="" class="footer-link">CAREER</a>
+        <a href="" class="footer-link">LEGAL NOTICES</a>
+        <a href="" class="footer-link">ACCESSIBILITY</a>
+      </div>
+      <div class="footer-item">
+        <h1 class="footer-title">SOCIAL</h1>
+        <a href="" class="footer-link">FACEBOOK</a>
+        <a href="" class="footer-link">INSTAGRAM</a>
+        <a href="" class="footer-link">YOUTUBE</a>
+        <a href="" class="footer-link">TIKTOK</a>
+        <a href="" class="footer-link">TWITTER</a>
+      </div>
+      <div class="footer-item">
+        <h1 class="footer-title">SUBSCRIBE</h1>
+      </div>
+    </footer>
+    <script src="../assets/js/about_us.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
