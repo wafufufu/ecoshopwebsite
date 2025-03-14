@@ -1,0 +1,124 @@
+.body {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.collection-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 400px 400px 400px 450px;
+  gap: 3px;
+  grid-template-areas:
+    "h1 h2 h3"
+    "h1 h4 h4"
+    "h5 h4 h4"
+    "h6 h6 h6";
+}
+.collection-img:first-child {
+  grid-area: h1;
+}
+.collection-img:nth-child(2) {
+  grid-area: h2;
+}
+.collection-img:nth-child(3) {
+  grid-area: h3;
+}
+.collection-img:nth-child(4) {
+  grid-area: h4;
+}
+.collection-img:nth-child(5) {
+  grid-area: h5;
+}
+.collection-img:last-child {
+  grid-area: h6;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+/* Responsive */
+@media screen and (max-width: 1281px) {
+  .body {
+    width: 100vh;
+  }
+}
+@media screen and (max-width: 769px) {
+  .body {
+    width: 70vh;
+  }
+  .collection-list {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 400px 400px 450px;
+    gap: 3px;
+    grid-template-areas:
+      "h1 h2"
+      "h1 h3"
+      "h5 h4"
+      "h6 h6";
+  }
+  .header-wrapper {
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 10;
+  }
+  .header-brand,
+  .header-more {
+    position: unset;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px 7px 20px;
+  }
+  .header-brand-nav {
+    display: none;
+  }
+  .body-background-img {
+    padding-top: 50px;
+  }
+  .logo {
+    width: 120px;
+  }
+  .icon-img.hidden {
+    display: flex;
+    margin-left: 10px;
+    margin-top: -3px;
+    align-items: center;
+  }
+  .body-news {
+    left: 40%;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .footer-column {
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 415px) {
+  .body {
+    width: 50vh;
+  }
+  .collection-list {
+    display: block;
+  }
+  .body-news-title {
+    font-size: 1.5rem;
+  }
+  .body-news-link {
+    font-size: 1.1rem;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-column-item-link {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .footer-column-item-link {
+    font-size: 0.7rem;
+  }
+}
